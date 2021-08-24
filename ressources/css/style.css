@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p, a, li {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+/*header*/
+
+.banner-container {
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1591040092219-081fb773589c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-position: center;
+    background-size: cover;
+    padding:10% 0;
+}
+
+.banner-header {
+    background-color: rgba(34, 111, 224, 0.6);
+    padding: 5%;
+    color: white;
+    font-size: 2rem;
+}
+
+nav {
+    background-color: #E04C38;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a{
+    padding: 2%;
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/*about*/
+
+.about-container {
+    background-color: #BEE04F;
+    text-align: center;
+    padding: 2%
+
+}
+
+.about-content {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.about-content h2, .about-content p, .about-content a{
+    color:darkslategray;
+}
+
+.placeholder {
+    background-image: url("https://images.unsplash.com/photo-1609058700004-608180fae6ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1140&q=80");
+    height: 300px;
+    background-size: cover;
+    position: center;
+    background-attachment: fixed;
+}
+
+/*events*/
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+}
+.upcoming-events figure {
+    display: flex;
+    margin: 2% 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+figcaption {
+    margin: 1em;
+}
+.upcoming-events figcaption{
+    flex: 1 1 300px;
+}
+
+.upcoming-events figure:nth-of-type(odd){
+    flex-direction: row-reverse;
+}
+.events img {
+    max-width: 100%;
+    min-width: 200px;
+    max-height: auto;
+    flex: 1 1 300px;
+}
+
+.weekly, .upcoming-events {
+
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 500px;
+}
+
+.weekly figure {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 2% 0;
+}
+
+.weekly {
+    background-color: #226FE0;
+    padding: 4%;
+    align-items: center;
+}
+.upcoming-events {
+
+    vertical-align: top;
+    background-color: #E04C38;
+    padding: 4%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*footer section*/
+footer {
+    background-color: #1E4D94;
+    padding: 2%;
+    text-align: center;
+}
